@@ -1,0 +1,10 @@
+language: go
+
+go:
+    - 1.2
+    - 1.3
+    - tip
+
+script:
+    - cd lib/goose
+    - go test -short
