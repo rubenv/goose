@@ -5,6 +5,9 @@ go:
     - 1.3
     - tip
 
+install:
+    - cd lib/goose
+    - go get
 script:
     - cd lib/goose
     - go test -short
