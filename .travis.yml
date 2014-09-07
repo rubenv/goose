@@ -9,5 +9,4 @@ install:
     - cd lib/goose
     - go get
 script:
-    - cd lib/goose
     - go test -short
