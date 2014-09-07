@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bitbucket.org/liamstask/goose/lib/goose"
+	"github.com/rubenv/goose/lib/goose"
 	"log"
 )
 

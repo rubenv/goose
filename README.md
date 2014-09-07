@@ -4,15 +4,17 @@ goose is a database migration tool.
 
 You can manage your database's evolution by creating incremental SQL or Go scripts.
 
-[![Build Status](https://drone.io/bitbucket.org/liamstask/goose/status.png)](https://drone.io/bitbucket.org/liamstask/goose/latest)
+[![Build Status](https://travis-ci.org/rubenv/goose.svg?branch=master)](https://travis-ci.org/rubenv/goose)
+
+*Note: This is a forked and extended version of [https://bitbucket.org/liamstask/goose](https://bitbucket.org/liamstask/goose). I'm upstreaming patches where possible, but given that the upstream is more or less unmaintained, there's no guarantee that they'll end up there. Endless credit to Liam Staskawicz for the initial implementation.*
 
 # Install
 
-    $ go get bitbucket.org/liamstask/goose/cmd/goose
+    $ go get github.com/rubenv/goose/cmd/goose
 
 This will install the `goose` binary to your `$GOPATH/bin` directory.
 
-You can also build goose into your own applications by importing `bitbucket.org/liamstask/goose/lib/goose`. Documentation is available at [godoc.org](http://godoc.org/bitbucket.org/liamstask/goose/lib/goose).
+You can also build goose into your own applications by importing `github.com/rubenv/goose/lib/goose`. Documentation is available at [godoc.org](http://godoc.org/github.com/rubenv/goose/lib/goose).
 
 NOTE: the API is still new, and may undergo some changes.
 
@@ -227,7 +229,7 @@ These instructions assume that you're using [Keith Rarick's Heroku Go buildpack]
 // note: need at least one blank line after build constraint
 package main
 
-import _ "bitbucket.org/liamstask/goose/cmd/goose"
+import _ "github.com/rubenv/goose/cmd/goose"
 ```
 
 [Set up your Heroku database(s) as usual.](https://devcenter.heroku.com/articles/heroku-postgresql)
